@@ -1,0 +1,54 @@
+.auth_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_form_container {
+    margin-top: 5rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem;
+}
+
+.auth_form_name {
+    text-align: center;
+}
+
+.auth_form_input {
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.auth_form_input_name {
+    margin-top: 1rem;
+}
+
+.auth_submit_button {
+    padding: 5px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.auth_switch_mode_button {
+    border: none;
+    background: none;
+    color: blue;
+    cursor: pointer;
+}
+.auth_mode_button_wrapper {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.form_message {
+    color: red;
+    font-size: 14px;
+    font-weight: 300;
+}

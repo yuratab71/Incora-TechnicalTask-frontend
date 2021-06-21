@@ -1,0 +1,91 @@
+.item_container {
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.item_image {
+    width: 200px !important;
+    object-fit: contain;
+}
+
+.image_wrapper {
+    flex: 0.2;
+}
+
+.item_name {
+    margin-top: 1rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.item_description {
+    margin-top: 1rem;
+    text-align: left;
+    line-height: 42px;
+}
+
+.item_createBy {
+    font-size: 12px;
+}
+
+.itemInfo_container {
+    flex: 0.7;
+}
+
+.author_info {
+    margin-top: 5rem;
+}
+
+.button_wrapper {
+    display: flex;
+}
+
+.item_form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: left;
+}
+
+.item_description {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.item_form_wrapper {
+    width: 100%;
+}
+
+.form_input_description {
+    height: 8rem;
+}
+
+.submit_button {
+    padding: 5px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.form_input {
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.warning {
+    font-size: 12px;
+    margin-top: 2rem;
+    font-weight: 300;
+    color: red;
+}

@@ -1,0 +1,42 @@
+.create_form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.create_form_container {
+    margin-top: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1rem;
+    transition: 0.2s ease-in;
+}
+
+.create_form_input_name {
+    margin-top: 1rem;
+}
+
+.create_form_input {
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.create_form_input_description {
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    height: 8rem;
+}
+
+.create_submit_button {
+    padding: 5px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}

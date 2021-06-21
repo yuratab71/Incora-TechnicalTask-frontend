@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import useRoutes from "./common/hooks/useRoutes";
+import useAuth from "./common/hooks/useAuth";
+import { connect } from "react-redux";
+import { previousAuth } from "./redux/reducers/authReducer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = ({ previousAuth, isAuthGlobal }) => {
+  const { token, userId, login, logout } = useAuth();
+  const isAuth = !!token;
 
-export default App;
+  useEffect(() => {
+    previousAuth(token, userId, isAuth, login, logout);
+  }, [isAuth]);
+
+  const routes = useRoutes(isAuthGlobal);
+
+  return <div>{routes}</div>;
+};
+
+const mapStateToProps = (state) => {
+  return {
+    isAuthGlobal: state.auth.isAuth,
+  };
+};
+
+export default connect(mapStateToProps, { previousAuth })(App);
